@@ -1,3 +1,4 @@
+/* pack_a_lunch.css */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -16,9 +17,9 @@
 }
 
 .dish:hover {
-    border-color: rgb(0, 162, 255);
+    border-color: rgb(255, 145, 0);
     transition: 0.5s ease;
-    filter: drop-shadow(0 0 1rem rgba(0, 162, 255, 0.3));
+    filter: drop-shadow(0 0 1rem rgba(138, 94, 0, 0.3));
     transform: scale(101%);
 
 }
@@ -122,11 +123,11 @@ textarea:focus {
 }
 
 .order button[type="submit"] {
-    background-color: #4291c2;
+    background-color: #c28f42;
 }
 
 .order button[type="submit"]:hover {
-    background-color: #05466e;
+    background-color: #a35b02;
 }
 
 .order button[type="reset"] {
@@ -169,12 +170,14 @@ textarea:focus {
     display: block;
 }
 
-#order-summary  span {
-    margin-left: 2rem;
-}
-
 .meal-category {
     font-weight: bold;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 800px) {
